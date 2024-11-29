@@ -4,6 +4,6 @@ class test
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine(DateTime.Now.ToString("yyyy-MM-dd"));
+        Console.WriteLine(DateTime.Today.ToString("yyyy-MM-dd"));
     }
 }
