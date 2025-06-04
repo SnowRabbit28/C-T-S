@@ -1,2 +1,3 @@
-# Programmers
-This is an auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
+# C-T-S
+코딩 테스트 스터디 인디..음.. 이름이 딱히 생각이 안나가지고..
+아니 이렇게 쉬운거 푸는데 ..코딩테스트 스터디라고하기도 좀 웃기고 그러네..
