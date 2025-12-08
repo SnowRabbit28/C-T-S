@@ -9,13 +9,22 @@ int main()
     int cnt = 0;
     string s;
     getline(cin, s);
+    bool inWord = false;
 
-    stringstream ss(s);
-
-    string word;
-    while (ss >> word)
+    for (auto c : s)
     {
-        cnt++;
+        if (c == ' ')
+        {
+            inWord = false;
+        }
+        else
+        {
+            if (!inWord)
+            {
+                inWord = true;
+                cnt++;
+            }
+        }
     }
-    cout << cnt << "\n";
+    cout << cnt << '\n';
 }
