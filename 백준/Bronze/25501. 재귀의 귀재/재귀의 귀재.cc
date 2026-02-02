@@ -2,7 +2,7 @@
 using namespace std;
 
 int cnt;
-int recursion(const char *s, int l, int r)
+int recursion(string_view s, int l, int r)
 {
     cnt++;
     if (l >= r)
@@ -13,13 +13,15 @@ int recursion(const char *s, int l, int r)
         return recursion(s, l + 1, r - 1);
 }
 
-int isPalindrome(const char *s)
+int isPalindrome(const string& s)
 {
-    return recursion(s, 0, strlen(s) - 1);
+    return recursion(s, 0, (int)s.length() - 1);
 }
 
 int main(void)
 {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
     int n;
     cin >> n;
     while (n--)
@@ -27,6 +29,7 @@ int main(void)
         string s;
         cin >> s;
         cnt = 0;
-        cout << isPalindrome(s.c_str()) << " " << cnt << "\n";
+        cout << isPalindrome(s) << " " << cnt << "\n";
     }
 }
+
