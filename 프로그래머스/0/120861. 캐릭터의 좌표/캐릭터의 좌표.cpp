@@ -1,29 +1,26 @@
 #include <string>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
 vector<int> solution(vector<string> keyinput, vector<int> board) {
-    vector<int> answer = {0,0};
+    vector<int> answer;
     int Xmax = board[0] / 2;
     int Ymax = board[1] / 2;
+    int x = 0;
+    int y = 0;
     for(auto s : keyinput){
-        if(s == "left"){
-            if(answer[0] == -Xmax) continue;
-            else answer[0]--;
-        }
-        else if(s == "right"){
-            if(answer[0] == Xmax) continue;
-            else answer[0]++;  
-        }
-        else if(s == "up"){
-            if(answer[1] == Ymax) continue;
-            else answer[1]++;  
-        }
-        else if(s == "down"){
-            if(answer[1] == -Ymax) continue;
-            else answer[1]--;  
-        }
+        if(s == "left") x--;
+        else if(s == "right") x++;
+        else if(s == "up") y++;
+        else if(s == "down") y--;
+        
+        x = clamp(x,-Xmax,Xmax);
+        y = clamp(y,-Ymax,Ymax);
     }
+    answer.push_back(x);
+    answer.push_back(y);
     return answer;
 }
+
