@@ -1,3 +1,15 @@
 # C-T-S
 코딩 테스트 스터디 인디..음.. 이름이 딱히 생각이 안나가지고..
 아니 이렇게 쉬운거 푸는데 ..코딩테스트 스터디라고하기도 좀 웃기고 그러네...
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [1288-remove-covered-intervals](https://github.com/SnowRabbit28/C-T-S/tree/master/1288-remove-covered-intervals) |
+## Sorting
+|  |
+| ------- |
+| [1288-remove-covered-intervals](https://github.com/SnowRabbit28/C-T-S/tree/master/1288-remove-covered-intervals) |
+<!---LeetCode Topics End-->
